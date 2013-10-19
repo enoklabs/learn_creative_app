@@ -2,7 +2,7 @@ class CreateVideos < ActiveRecord::Migration
   def change
     create_table :videos do |t|
       t.references :subjects
-      t.string 'title'
+      t.string 'title' , :limit => 50
       t.string 'permalink'
       t.string 'icon'
       t.integer 'position'
