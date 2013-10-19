@@ -1,0 +1,126 @@
+/***************************
+** Blue:      #34495E
+** Green:     #1abc9c
+** White:     #fbfcfc
+** babyblue:  #e0e8ed
+** whiteblue: #ecf0f1
+****************************/
+
+
+body{
+    max-width: 100%;
+    background: #34495E;
+    font-family: 'Lato', Arial, sans-serif;
+    list-style: none;
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Lato';
+    font-weight: 400;
+}
+
+h1{
+    font-size: 3em;
+}
+
+header, footer{
+    background: #34495E;
+    border-bottom: 15px solid #2b3f54;
+    max-width: 100%;
+    color: #ffffff;
+}
+
+.logo{
+    padding-top: 12px;
+}
+
+
+/********* HOME CTA **********/
+.cta{
+    background: #fbfcfc;
+}
+.cta, subjects{
+    width: inherit;
+}
+
+.cta h1, .cta h4{
+
+}
+
+.signup{
+    width: 13em;
+    height: 3em;
+    font-size: 1.5em;
+}
+
+.navLink{
+    margin-right: 20px;
+    margin-top: 25px;
+    color: #ffffff;
+}
+
+.cartoon{
+    margin-top: 100px;
+}
+
+/********* SUBJECTS CTA **********/
+.subjects{
+    background: #e0e8ed;
+}
+
+.subject.panel.large-3.columns{
+    background: #ecf0f1;
+    border-radius: 7px;
+    max-width: 14em;
+    float: left;
+    margin-right: 1.6em;
+}
+.subject.panel.large-3.columns h5{
+    font-weight: 600;
+}
+.teach{
+    margin-right: 15px;
+}
+
+/********* FOOTER **********/
+.copyright{
+    margin-top: 20px;
+    float: right;
+}
+
+footer{
+    border-bottom: none;
+    border-top: 15px solid #2b3f54;
+}
+
+
+/********* FORMS **********/
+.loginform{
+    background: #fbfcfc;
+}
+
+.loginform form{
+    background: #ECF0F1;
+    margin: 100px 0;
+
+}
+
+.login{
+    border-radius: 10px;
+}
+
+/********* LIBRARY **********/
+.library{
+    background: #fbfcfc;
+}
+
+.buttonsignup{
+    margin-top: 15px;
+}
+.vid{
+    margin: 20px 0;
+}
+
+.vid h1{
+    text-align: center;
+}
