@@ -1,153 +1,19 @@
+<ol>
+  <% @art_videos.each do |video| %>
+      <li><a href=<%= "/videos/#{video.id}" %>><%= "Name: #{video.title} - Category: #{video.subject.name}" %></a></li>
+  <% end %>
+</ol>
 
+<ol>
+  <% @graphic_videos.each do |video| %>
+      <li><a href=<%= "/videos/#{video.id}" %>><%= "Name: #{video.title} - Category: #{video.subject.name}" %></a></li>
+  <% end %>
+</ol>
 
-<!-- <?php include_once 'header.php'; ?>  </header> -->
-
-
-
-
-<section class="library">
-
-  <!-- ======== Art ======== -->
-  <div class="row">
-    <br/><br/>
-    <div class="large-12 columns">
-      <h2>Art</h2>
-    </div>
-    <div class="subject panel large-3 columns">
-      <h3><% @videos.title %></h3>
-      <p>This is Video #1</p>
-    </div>
-
-    <div class="subject panel large-3 columns">
-      <h3>Video Title</h3>
-      <p>This is Video #1</p>
-    </div>
-
-    <div class="subject panel large-3 columns">
-      <h3>Video Title</h3>
-      <p>This is Video #1</p>
-    </div>
-
-    <div class="subject panel large-3 columns">
-      <h3>Video Title</h3>
-      <p>This is Video #1</p>
-    </div>
-  </div><br/><hr>
-
-
-  <!-- ======== Art ======== -->
-  <div class="row">
-    <br/><br/>
-    <div class="large-12 columns">
-      <h2>Graphic Design</h2>
-    </div>
-    <div class="subject panel large-3 columns">
-      <h3>Video Title</h3>
-      <p>This is Video #1</p>
-    </div>
-
-    <div class="subject panel large-3 columns">
-      <h3>Video Title</h3>
-      <p>This is Video #1</p>
-    </div>
-
-    <div class="subject panel large-3 columns">
-      <h3>Video Title</h3>
-      <p>This is Video #1</p>
-    </div>
-
-    <div class="subject panel large-3 columns">
-      <h3>Video Title</h3>
-      <p>This is Video #1</p>
-    </div>
-  </div><br/><hr>
-
-  <!-- ======== Web Design ======== -->
-  <div class="row">
-    <br/><br/>
-    <div class="large-12 columns">
-      <h2>Web Design</h2>
-    </div>
-    <div class="subject panel large-3 columns">
-      <h3>Video Title</h3>
-      <p>This is Video #1</p>
-    </div>
-
-    <div class="subject panel large-3 columns">
-      <h3>Video Title</h3>
-      <p>This is Video #1</p>
-    </div>
-
-    <div class="subject panel large-3 columns">
-      <h3>Video Title</h3>
-      <p>This is Video #1</p>
-    </div>
-
-    <div class="subject panel large-3 columns">
-      <h3>Video Title</h3>
-      <p>This is Video #1</p>
-    </div>
-  </div><br/><hr>
-
-  <!-- ======== Code and Developmet ======== -->
-  <div class="row">
-    <br/><br/>
-    <div class="large-12 columns">
-      <h2>Code &amp; Development</h2>
-    </div>
-    <div class="subject panel large-3 columns">
-      <h3>Video Title</h3>
-      <p>This is Video #1</p>
-    </div>
-
-    <div class="subject panel large-3 columns">
-      <h3>Video Title</h3>
-      <p>This is Video #1</p>
-    </div>
-
-    <div class="subject panel large-3 columns">
-      <h3>Video Title</h3>
-      <p>This is Video #1</p>
-    </div>
-
-    <div class="subject panel large-3 columns">
-      <h3>Video Title</h3>
-      <p>This is Video #1</p>
-    </div>
-  </div><br/><hr>
-
-  <!-- ======== Business ======== -->
-  <div class="row">
-    <br/><br/>
-    <div class="large-12 columns">
-      <h2>Business</h2>
-    </div>
-    <div class="subject panel large-3 columns">
-      <h3>Video Title</h3>
-      <p>This is Video #1</p>
-    </div>
-
-    <div class="subject panel large-3 columns">
-      <h3>Video Title</h3>
-      <p>This is Video #1</p>
-    </div>
-
-    <div class="subject panel large-3 columns">
-      <h3>Video Title</h3>
-      <p>This is Video #1</p>
-    </div>
-
-    <div class="subject panel large-3 columns">
-      <h3>Video Title</h3>
-      <p>This is Video #1</p>
-    </div>
-  </div><br/><br/><br/>
-
-
-
-</section>
-
-
-
-
-<!-- <footer> <?php include_once 'footer.php'; ?> </footer>  -->
+<form method="post" action="/videos">
+  <label for="title">Title</label>
+  <input type="text" name="title"/>
+  <label for="category">Category</label>
+  <input type="text" name="category"/>
+  <input type="submit"/>
+</form>

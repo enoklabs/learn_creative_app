@@ -4,6 +4,17 @@ LearnCreative::Application.routes.draw do
 
   get 'subjects/list'
 
+  get 'videos/:id' => 'videos#show'
+
+  get 'videos/:id/edit' => 'videos#edit'
+
+  #post 'videos/:id/create'
+
+  #post 'videos/:id/update'
+
+  #post 'videos/:id/delete'
+
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

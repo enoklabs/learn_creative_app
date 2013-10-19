@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20131019032936) do
+ActiveRecord::Schema.define(version: 20131019212159) do
 
   create_table "0subject", primary_key: "subjectId", force: true do |t|
     t.string "subjectname", limit: 11, null: false
@@ -56,12 +56,12 @@ ActiveRecord::Schema.define(version: 20131019032936) do
   end
 
   create_table "videos", force: true do |t|
-    t.integer  "subjects_id"
+    t.integer  "subject_id"
     t.string   "title"
     t.string   "permalink"
     t.string   "icon"
     t.integer  "position"
-    t.boolean  "visible",     default: false
+    t.boolean  "visible",    default: false
     t.datetime "created_at"
     t.datetime "updated_at"
   end

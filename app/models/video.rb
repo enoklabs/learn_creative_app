@@ -1,4 +1,4 @@
 class Video < ActiveRecord::Base
-  has_many :Subjects
+  belongs_to :subject
 
 end
