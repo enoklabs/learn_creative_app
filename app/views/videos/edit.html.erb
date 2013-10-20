@@ -1,7 +1,29 @@
-<form method="post" action="/videos/<%= @video.id %>">
-  <label for="title">Title</label>
-  <input type="text" name="title"/>
-  <label for="category">Category</label>
-  <input type="text" name="category"/>
-  <input type="submit"/>
-</form>
+
+<!-- ====== EDIT FORM: VIDEO TITLE ====== -->
+<section class="loginform">
+
+  <div class="row">
+
+    <div class="large-6 large-centered columns">
+
+        <form class="login" method="post" action="/videos/<%= @video.id %>">
+          <fieldset class="login">
+            <p>Current Title:</p>
+            <h3><%= @video.title %></h3><br/>
+
+            <div class="row collapse">
+              <div class="small-9 columns">
+                <input type="text" placeholder="Enter new title here"/>
+              </div>
+              <div class="small-3 columns">
+                <input class="button postfix success-dark radius" type="submit" value="Submit"/>
+              </div>
+            </div>
+
+          </fieldset>
+        </form>
+
+    </div>
+
+  </div>
+</section>

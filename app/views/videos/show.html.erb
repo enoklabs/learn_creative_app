@@ -1,3 +1,58 @@
+
+<section class="library">
+  <div class="row">
+
+    <div class="large-12 columns vid">
+      <br/>
+      <h1><%= @video.title %></h1>
+    </div>
+
+  </div>
+
+  <div class="row">
+
+    <div class="large-12 large-centered columns">
+      <div class="panel">
+
+        <video width="930" height="523" poster="images/video.png" controls>
+          <source src="#" type="video/mp4">
+          <source src="#" type="video/ogg">
+          <source src="#" type="video/webm">
+          Your browser does not support the video tag.
+        </video>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <div class="row">
+    <div class="large-2 columns">
+      &nbsp;
+    </div>
+    <div class="large-6 columns">
+      <p class="right"><strong>Video Id: &nbsp; &nbsp;</strong><%= @video.id %><strong>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        Subject: &nbsp; &nbsp;</strong><%= @video.subject.name %></p>
+    </div>
+    <div class="large-4 columns right">
+      <form method="post" action=<%= "/videos/#{@video.id}/delete" %>>
+        <input class="button alert-dark radius crud right" type="submit" value="Delete" name="delete">
+      </form>
+      <form method="post" action=<%= "/videos/#{@video.id}/edit" %>>
+        <input class="button secondary radius crud right" type="submit" value="Edit" name="edit">
+      </form>
+    </div>
+  </div>
+  <br/><br/><br/>
+</section>
+
+
+
+
+
+
 <h1><%= @video.title %></h1>
 
 <p><%= @video.subject.name %></p>
