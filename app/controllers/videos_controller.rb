@@ -23,10 +23,10 @@ class VideosController < ApplicationController
   end
 
   def update
-    @video = Video.find(params[:id])
+    @video = Video.find(params[:id]).update_attributes(title: params[:title])
 
-    # error says: cannot find update_attibutes
-    @video.update_attributes(title: params[:title])
+    # error says: cannot find update_attributes
+    #@video.update_attributes(title: params[:title])
   end
 
   def delete
