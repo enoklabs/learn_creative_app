@@ -24,11 +24,9 @@ class VideosController < ApplicationController
 
   def update
     @video = Video.find(params[:id])
-    if @video
-      @video.update(title: params[:title], subject: params[:subject])
-    else
-      #erb :'errors/not_found'
-    end
+
+    # error says: cannot find update_attibutes
+    @video.update_attributes(title: params[:title])
   end
 
   def delete

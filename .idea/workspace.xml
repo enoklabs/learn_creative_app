@@ -5,7 +5,7 @@
     <ignored path="learn_creative.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/database.yml" changelist="e68f4efb-0e00-419b-8b48-9bfe21974a47" time="1382381089306" ignored="false" />
-    <file path="/routes.rb" changelist="e68f4efb-0e00-419b-8b48-9bfe21974a47" time="1382386374434" ignored="false" />
+    <file path="/routes.rb" changelist="e68f4efb-0e00-419b-8b48-9bfe21974a47" time="1382388455151" ignored="false" />
     <file path="/20131019012115_create_users.rb" changelist="e68f4efb-0e00-419b-8b48-9bfe21974a47" time="1382146820083" ignored="false" />
     <file path="/temp.rb" changelist="e68f4efb-0e00-419b-8b48-9bfe21974a47" time="1382210067721" ignored="false" />
     <file path="/20131019022736_alter_users.rb" changelist="e68f4efb-0e00-419b-8b48-9bfe21974a47" time="1382150026377" ignored="false" />
@@ -19,7 +19,7 @@
     <file path="/subject.rb" changelist="e68f4efb-0e00-419b-8b48-9bfe21974a47" time="1382216653069" ignored="false" />
     <file path="/subjects_controller.rb" changelist="e68f4efb-0e00-419b-8b48-9bfe21974a47" time="1382208046178" ignored="false" />
     <file path="/list.html.erb" changelist="e68f4efb-0e00-419b-8b48-9bfe21974a47" time="1382209991058" ignored="false" />
-    <file path="/videos_controller.rb" changelist="e68f4efb-0e00-419b-8b48-9bfe21974a47" time="1382386716022" ignored="false" />
+    <file path="/videos_controller.rb" changelist="e68f4efb-0e00-419b-8b48-9bfe21974a47" time="1382388623352" ignored="false" />
     <file path="/20131019204114_add_video_id_to_subjects.rb" changelist="e68f4efb-0e00-419b-8b48-9bfe21974a47" time="1382216609605" ignored="false" />
     <file path="/seeds.rb" changelist="e68f4efb-0e00-419b-8b48-9bfe21974a47" time="1382241819445" ignored="false" />
     <file path="/20131019210108_remove_video_id_from_subjects.rb" changelist="e68f4efb-0e00-419b-8b48-9bfe21974a47" time="1382216539448" ignored="false" />
@@ -75,7 +75,7 @@
       <file leaf-file-name="routes.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/config/routes.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="32" selection-start="293" selection-end="293" vertical-scroll-proportion="0.0">
+            <state line="15" column="38" selection-start="299" selection-end="299" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -90,10 +90,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="videos_controller.rb" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="videos_controller.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/controllers/videos_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="37" column="50" selection-start="1033" selection-end="1033" vertical-scroll-proportion="0.0">
+            <state line="27" column="46" selection-start="831" selection-end="831" vertical-scroll-proportion="0.46605292">
               <folding />
             </state>
           </provider>
@@ -108,10 +108,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="video.rb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="video.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/models/video.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="0" selection-start="55" selection-end="55" vertical-scroll-proportion="0.03452244">
+            <state line="2" column="0" selection-start="55" selection-end="55" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -140,9 +140,9 @@
         <option value="$PROJECT_DIR$/app/views/videos/show.html.erb" />
         <option value="$PROJECT_DIR$/config/database.yml" />
         <option value="$PROJECT_DIR$/app/views/videos/library.html.erb" />
+        <option value="$PROJECT_DIR$/app/models/video.rb" />
         <option value="$PROJECT_DIR$/config/routes.rb" />
         <option value="$PROJECT_DIR$/app/controllers/videos_controller.rb" />
-        <option value="$PROJECT_DIR$/app/models/video.rb" />
       </list>
     </option>
   </component>
@@ -773,6 +773,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/videos/show.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/video.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="0" selection-start="55" selection-end="55" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/videos/edit.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
@@ -782,14 +796,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/config/routes.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="32" selection-start="293" selection-end="293" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/videos/show.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+        <state line="15" column="38" selection-start="299" selection-end="299" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -803,14 +810,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/videos_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="37" column="50" selection-start="1033" selection-end="1033" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/video.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="0" selection-start="55" selection-end="55" vertical-scroll-proportion="0.03452244">
+        <state line="27" column="46" selection-start="831" selection-end="831" vertical-scroll-proportion="0.46605292">
           <folding />
         </state>
       </provider>
