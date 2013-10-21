@@ -1,6 +1,4 @@
-
-
-<section class="library">
+<section class="library" xmlns="http://www.w3.org/1999/html">
 
 
 <!-- ======== Art ======== -->
@@ -90,32 +88,46 @@
         </div>
     <% end %>
 
-  </div><br/><hr>
+  </div><br/><br/>
 <!-- === end business === -->
 
 </section>
 
 
-<br/><hr/>
 
 
 
-<ol>
-  <% @graphic_videos.each do |video| %>
-      <li><a href=<%= "/videos/#{video.id}" %>><%= "Name: #{video.title} - Category: #{video.subject.name}" %></a></li>
-  <% end %>
-</ol>
-
+<section class="create">
 <div class="row">
+  <div class="large-6 large-centered columns formpadding">
+
+  <br/><br/><br/><br/><br/>
+  <h4>Want to create a new video?</h4>
+  <form method="post" action="/videos">
+
+    <div class="row collapse">
+        <div class="large-9 columns">
+            <input type="text" name="title" placeholder="Title of New Video"/>
+        </div>
+        <div class="large-3 columns">
+          <div id="customDropdown" class="small secondary radius">
+            <select>
+              <option>Art</option>
+              <option>Graphics</option>
+              <option>Web</option>
+              <option>Development</option>
+              <option>Business</option>
+            </select>
+          </div>
+        </div>
+    </div>
+
+    <input class="button small success-dark radius" type="submit" value="Add Video"/>
+
+  </form>
 
 
-
+  </div>
 </div>
+</section>
 
-<form method="post" action="/videos">
-  <label for="title">Title</label>
-  <input type="text" name="title"/>
-  <label for="category">Category</label>
-  <input type="text" name="category"/>
-  <input type="submit"/>
-</form>

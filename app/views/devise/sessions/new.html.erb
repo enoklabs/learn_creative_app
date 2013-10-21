@@ -1,0 +1,41 @@
+<section class="deviseform">
+  <div class="row">
+    <div class="large-6 large-centered columns formpadding">
+
+
+
+
+<h2>Sign in</h2>
+
+<%= form_for(resource, :as => resource_name, :url => session_path(resource_name)) do |f| %>
+  <div><%= f.label :email %><br />
+  <%= f.email_field :email, :autofocus => true %></div>
+
+  <div><%= f.label :password %><br />
+  <%= f.password_field :password %></div>
+
+  <% if devise_mapping.rememberable? -%>
+    <div>
+      <%= f.check_box :remember_me %> <!--  #f.label :remember_me %> -->
+      &nbsp; Remember Me
+    </div>
+  <% end -%>
+
+  <div class="row">
+      <div class="large-12  columns">
+        <div ><%= f.submit 'Sign in', :class => 'button success-dark radius' %></div>
+      </div>
+  </div>
+<% end %>
+
+  <div class="row">
+    <div class="large-12 columns right">
+      <br/>
+      <p>Don't have an account? <a href="<%= '/members/sign_up' %>">&nbsp; Sign up</a></p>
+    </div>
+  </div>
+
+
+    </div>
+  </div>
+</section>

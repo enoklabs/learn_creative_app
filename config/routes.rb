@@ -1,5 +1,8 @@
 LearnCreative::Application.routes.draw do
-  #root :to => 'demo#index'
+  devise_for :members
+
+  root :to => 'videos#home'
+
   get 'videos/library'
 
   get 'subjects/list'
@@ -7,6 +10,7 @@ LearnCreative::Application.routes.draw do
   get 'videos/:id' => 'videos#show'
 
   get 'videos/:id/edit' => 'videos#edit'
+
 
   #post 'videos/:id/create'
 

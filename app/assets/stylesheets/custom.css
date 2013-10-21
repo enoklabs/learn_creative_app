@@ -39,7 +39,7 @@ header, footer{
 .cta{
     background: #fbfcfc;
 }
-.cta, subjects{
+.cta, .subjects{
     width: inherit;
 }
 
@@ -102,9 +102,15 @@ footer{
 .loginform form{
     background: #ECF0F1;
     margin: 100px 0;
-
 }
 
+.deviseform{
+    background: #fbfcfc;
+}
+
+.formpadding{
+    padding: 30px 0 140px;
+}
 .login{
     border-radius: 10px;
 }
@@ -124,3 +130,23 @@ footer{
 .vid h1{
     text-align: center;
 }
+
+.create{
+    background: #ECF0F1;
+}
+#customDropdown{
+    color: #333333;
+    height: 32px;
+    border: none;
+}
+#customDropdown select{
+    background-color: #fbfcfc;
+    color: #333333;
+    height: 32px;
+    border: none;
+    box-shadow: none;
+}
+.crud{
+    height: 35px;
+}
+
