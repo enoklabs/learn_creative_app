@@ -111,7 +111,7 @@
       <file leaf-file-name="video.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/models/video.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="4" selection-start="61" selection-end="61" vertical-scroll-proportion="0.06904488">
+            <state line="2" column="0" selection-start="55" selection-end="55" vertical-scroll-proportion="0.03452244">
               <folding />
             </state>
           </provider>
@@ -810,7 +810,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/models/video.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="4" selection-start="61" selection-end="61" vertical-scroll-proportion="0.06904488">
+        <state line="2" column="0" selection-start="55" selection-end="55" vertical-scroll-proportion="0.03452244">
           <folding />
         </state>
       </provider>
