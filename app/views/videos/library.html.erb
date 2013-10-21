@@ -11,8 +11,11 @@
     <!-- displays all art videos -->
     <% @art_videos.each do |video| %>
     <div class="subject panel large-3 columns">
-      <p><%= video.icon %></p>
-      <a href=<%= "/videos/#{video.id}" %>><h4><%= video.title %></h4></a>
+      <a class="text-center" href=<%= "/videos/#{video.id}" %>>
+        <p>
+          <%= image_tag( video.icon, :class => 'icons' ) %>
+        </p>
+        <h4><%= video.title %></h4></a>
     </div>
     <% end %>
 
@@ -29,8 +32,11 @@
     <!-- displays all art videos -->
     <% @graphic_videos.each do |video| %>
         <div class="subject panel large-3 columns">
-          <p><%= video.icon %></p>
-          <a href=<%= "/videos/#{video.id}" %>><h4><%= video.title %></h4></a>
+          <a class="text-center" href=<%= "/videos/#{video.id}" %>>
+          <p>
+            <%= image_tag( video.icon, :class => 'icons' ) %>
+          </p>
+          <h4><%= video.title %></h4></a>
         </div>
     <% end %>
 
@@ -47,8 +53,11 @@
     <!-- displays all art videos -->
     <% @web_videos.each do |video| %>
         <div class="subject panel large-3 columns">
-          <p><%= video.icon %></p>
-          <a href=<%= "/videos/#{video.id}" %>><h4><%= video.title %></h4></a>
+          <a class="text-center" href=<%= "/videos/#{video.id}" %>>
+            <p>
+              <%= image_tag( video.icon, :class => 'icons' ) %>
+            </p>
+            <h4><%= video.title %></h4></a>
         </div>
     <% end %>
 
@@ -65,8 +74,11 @@
     <!-- displays all art videos -->
     <% @development_videos.each do |video| %>
         <div class="subject panel large-3 columns">
-          <p><%= video.icon %></p>
-          <a href=<%= "/videos/#{video.id}" %>><h4><%= video.title %></h4></a>
+          <a class="text-center" href=<%= "/videos/#{video.id}" %>>
+            <p>
+              <%= image_tag( video.icon, :class => 'icons' ) %>
+            </p>
+            <h4><%= video.title %></h4></a>
         </div>
     <% end %>
 
@@ -83,8 +95,11 @@
     <!-- displays all art videos -->
     <% @business_videos.each do |video| %>
         <div class="subject panel large-3 columns">
-          <p><%= video.icon %></p>
-          <a href=<%= "/videos/#{video.id}" %>><h4><%= video.title %></h4></a>
+          <a class="text-center" href=<%= "/videos/#{video.id}" %>>
+            <p>
+              <%= image_tag( video.icon, :class => 'icons' ) %>
+            </p>
+            <h4><%= video.title %></h4></a>
         </div>
     <% end %>
 

@@ -11,12 +11,11 @@ LearnCreative::Application.routes.draw do
 
   get 'videos/:id/edit' => 'videos#edit'
 
+  post 'videos/:id/' => 'videos#create'
 
-  #post 'videos/:id/create'
+  post 'videos/:id/' => 'videos#update'
 
-  #post 'videos/:id/update'
-
-  #post 'videos/:id/delete'
+  post 'videos/:id/' => 'videos#delete'
 
 
   # The priority is based upon order of creation: first created -> highest priority.

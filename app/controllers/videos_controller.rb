@@ -18,6 +18,10 @@ class VideosController < ApplicationController
     @video = Video.find(params[:id])
   end
 
+  def create
+    @video = Video.new(params[:title], params[:subject]).save
+  end
+
   def update
     @video = Video.find(params[:id])
     if @video
