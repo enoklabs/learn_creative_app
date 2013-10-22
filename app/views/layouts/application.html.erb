@@ -22,9 +22,24 @@
     </div>
     <div class="large-9 columns">
       <ul class="right inline-list">
+
+       <% if member_signed_in?  %>
+
         <li><a class="navLink" href="<%= '/videos/library' %>">Library</a></li>
+
+        <li>
+            <%= link_to 'Sign out', destroy_member_session_path, :method => :delete, :class => 'navLink' %>
+        </li>
+
+        <% else %>
+
         <li><a class="navLink" href="<%= '/members/sign_in' %>">Sign in</a></li>
+
         <li><a class="button buttonsignup success-dark radius" href="<%= '/members/sign_up' %>">Sign up</a></li>
+
+        <% end %>
+
+
       </ul>
     </div><!-- navigation -->
   </div><!-- row -->
@@ -51,7 +66,7 @@
       </div>
 
       <div class="large-4 columns copyright">
-        <p class="right">Copyright 2013 by Enok.Madrid &nbsp;&nbsp;&nbsp;&nbsp;</p>
+        <p class="right green">Copyright &copy; 2013 by Enok.Madrid &nbsp;&nbsp;&nbsp;&nbsp;</p>
       </div>
 
 

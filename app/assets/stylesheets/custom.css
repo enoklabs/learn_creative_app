@@ -107,6 +107,10 @@ footer{
 .deviseform{
     background: #fbfcfc;
 }
+.deviseform i{
+    color: #8C9899;
+    font-size: small;
+}
 
 .formpadding{
     padding: 30px 0 140px;
@@ -150,3 +154,15 @@ footer{
     height: 35px;
 }
 
+.email{
+    font-size: medium;
+    text-align: right;
+    margin-top: 10px;
+    color: #8C9899;
+}
+.email span{
+    color: #1abc9c;
+}
+.green{
+    color: #1abc9c;
+}

@@ -1,5 +1,9 @@
 class VideosController < ApplicationController
+
+  before_filter :authenticate_member!
+
   def library
+
     @videos = Video.order('videos.position ASC')
 
     @art_videos         = @videos.select { |video| video.subject.name == 'Art' }
@@ -19,24 +23,24 @@ class VideosController < ApplicationController
   end
 
   def create
-    @video = Video.new(params[:title], params[:subject]).save
+    @video = Video.new(params[:title], params[:subject])
+    if @video.save
+      redirect_to(:action => 'library')
+    end
+      render('new')
   end
 
   def update
-    @video = Video.find(params[:id]).update_attributes(title: params[:title])
+    @video = Video.find(params[:id])
+    @video = @video.update_attributes(title: params[:title])
 
     # error says: cannot find update_attributes
     #@video.update_attributes(title: params[:title])
   end
 
   def delete
-    @video = Video.find(params[:id])
-    if @video
-      @video.destroy
-      redirect '/library'
-    else
-      #erb :'errors/not_found'
-    end
+    @video = Video.find(params[:id]).destroy
+
   end
 
 end

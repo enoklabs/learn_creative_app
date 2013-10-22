@@ -1,7 +1,8 @@
 LearnCreative::Application.routes.draw do
+
   devise_for :members
 
-  root :to => 'videos#home'
+  root :to => 'pages#home'
 
   get 'videos/library'
 

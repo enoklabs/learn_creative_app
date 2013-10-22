@@ -1,5 +1,9 @@
 <section class="library" xmlns="http://www.w3.org/1999/html">
 
+<div class="row">
+  <div class="large-8 columns"></div>
+  <div class="large-4 columns"><p class="email">Signed in as <span><a href="/members/edit"> <%= current_member.email %></a></span></p></div>
+</div>
 
 <!-- ======== Art ======== -->
   <div class="row"><br/><br/>
@@ -13,9 +17,9 @@
     <div class="subject panel large-3 columns">
       <a class="text-center" href=<%= "/videos/#{video.id}" %>>
         <p>
-          <%= image_tag( video.icon, :class => 'icons' ) %>
+          <%= image_tag( 'play.png', :class => 'icons' ) %>
         </p>
-        <h4><%= video.title %></h4></a>
+        <h6><%= video.title %></h6></a>
     </div>
     <% end %>
 
@@ -34,9 +38,9 @@
         <div class="subject panel large-3 columns">
           <a class="text-center" href=<%= "/videos/#{video.id}" %>>
           <p>
-            <%= image_tag( video.icon, :class => 'icons' ) %>
+            <%= image_tag( 'play.png', :class => 'icons' ) %>
           </p>
-          <h4><%= video.title %></h4></a>
+          <h6><%= video.title %></h6></a>
         </div>
     <% end %>
 
@@ -55,9 +59,9 @@
         <div class="subject panel large-3 columns">
           <a class="text-center" href=<%= "/videos/#{video.id}" %>>
             <p>
-              <%= image_tag( video.icon, :class => 'icons' ) %>
+              <%= image_tag( 'play.png', :class => 'icons' ) %>
             </p>
-            <h4><%= video.title %></h4></a>
+            <h6><%= video.title %></h6></a>
         </div>
     <% end %>
 
@@ -76,9 +80,9 @@
         <div class="subject panel large-3 columns">
           <a class="text-center" href=<%= "/videos/#{video.id}" %>>
             <p>
-              <%= image_tag( video.icon, :class => 'icons' ) %>
+              <%= image_tag( 'play.png', :class => 'icons' ) %>
             </p>
-            <h4><%= video.title %></h4></a>
+            <h6><%= video.title %></h6></a>
         </div>
     <% end %>
 
@@ -97,9 +101,9 @@
         <div class="subject panel large-3 columns">
           <a class="text-center" href=<%= "/videos/#{video.id}" %>>
             <p>
-              <%= image_tag( video.icon, :class => 'icons' ) %>
+              <%= image_tag( 'play.png', :class => 'icons' ) %>
             </p>
-            <h4><%= video.title %></h4></a>
+            <h6><%= video.title %></h6></a>
         </div>
     <% end %>
 
@@ -118,11 +122,11 @@
 
   <br/><br/><br/><br/><br/>
   <h4>Want to create a new video?</h4>
-  <form method="post" action="/videos">
+  <form action="/videos/create" method="post" >
 
     <div class="row collapse">
         <div class="large-9 columns">
-            <input type="text" name="title" placeholder="Title of New Video"/>
+            <input type="text" name="video[title]" placeholder="Title of New Video"/>
         </div>
         <div class="large-3 columns">
           <div id="customDropdown" class="small secondary radius">
