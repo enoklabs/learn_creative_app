@@ -11,12 +11,12 @@
 development:
   adapter: mysql2
   encoding: utf8
-  database: bdf1013
+  database: learn_creative
   pool: 5
   username: root
   password: root
   host: localhost
-  socket: /tmp/mysql.sock
+  socket: /Applications/MAMP/tmp/mysql/mysql.sock
 
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
@@ -24,7 +24,7 @@ development:
 test:
   adapter: mysql2
   encoding: utf8
-  database: bdf1013_test
+  database: learn_creative_test
   pool: 5
   username: root
   password: root
@@ -33,7 +33,7 @@ test:
 production:
   adapter: mysql2
   encoding: utf8
-  database: bdf1013_production
+  database: learn_creative_production
   pool: 5
   username: root
   password: root
